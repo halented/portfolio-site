@@ -1,20 +1,24 @@
 body {
-    background: #228B22;
+    background: rgb(50, 121, 50);
     text-align:center;
 }
 #main {
     width: 1000px;
     height: 600px;
-    background: #add8e6;
+    background: #7db871;
     margin: 25px auto;
     border: solid 2px #48ca7a;
     padding: 10px;
 }
 h1 {
     text-align: center;
-    font-family:"Curlz MT";
+    font-family:"Times New Roman";
     font: 20pt;
-    color: #48ca7a;
+    color: #67dde6;
+}
+h2 {
+    text-align: left;
+    font-family:"curlz mt";
 }
 hr {
     height: 2px;

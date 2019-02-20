@@ -7,17 +7,38 @@
         <div id="main">
             <h1>Ruby.new("bie")</h1>
             <hr>
-        <h2>How It's Maid: Websites</h2>
+        <h2>Making a Site!</h2>
         <p>I didn't want to run into any copyright issues, so I just spelled the TV Show title wrong. Now, this blog will largely be about Ruby and how you can use that amazing language to accomplish really amazing things, or really silly things, or what have you. But for the first post here I’ll be detailing what it takes to build a site, because that’s what took up the large part of my spare time for this week. </p>
 
         <p>Also because it’s interesting. A friend of mine used to say, “You should never ignore a curious urge, a creative urge, or an urge to brush your teeth.” You really can't go wrong with that one.</p>
         
         <p>The steps I took to building a website were a little haphazard, as self-teaching tends to be. The first thing I did was purchase a domain, from the only domain-purchasing site I knew offhand, <a href="www.godaddy.com">GoDaddy.com</a>. I wish I’d chosen a different one, but I was excited at the idea of getting started so I just went with it. Daddy is just such a terrible word. </p>
         
-        <p>**In future posts I might try to explore the ins-and-outs of how URL hoarding happens — the idea that one company can sit on the URL pile like a jealous dragon and hand them out to the highest bidder can’t be right, but that’s of course what I’m envisioning. **</p>
-        
-        <p>So, I have a domain. What’s next? Youtube videos. I watched a few different 20-minute submissions on how to start a website from scratch using HTML and CSS. I think I got a pretty good handle on how to put up some boxes with text and solid colors.</p>
+        <p>Regardless, I have a domain. What’s next? Youtube videos. I watched a few different 20-minute submissions on how to start a website from scratch using HTML and CSS. I think I got a pretty good handle on how to put up some boxes with text and solid colors.</p>
         <img src="pic1.png" alt="A Great Site">
+        
+        <p>Ugly, but functional. It was fun to fiddle with the alignment, font size, coloration, etc. Heartbreakingly, coding Curlz MT in the following manner into my style.css file did not have the desired result:
+            p {
+            font-famiy:”Curlz MT”;
+            }
+            
+        <p>We’ll figure that out later though. I WILL have Curlz MT on my website. The next big issue arose with the question: How do I upload the HTML and CSS files that I wrote to my domain?</p>
+            
+        <p>Now, a lot of people are going to tell you that you Must Pay For Web Hosting, but they are only saying that cause they hate to see you have a good time. After a few hours of web searching and a useful conversation with a colleague (shoutout to Scott S), I found a tidy, informative post from Kirsten Swanson which detailed exactly how to set up my new GoDaddy domain using web hosting from our good friend GitHub. </p>
+        
+        <h2>And there we have it. My unappealing child is born. </h2>
+        
+        <p>Here are a few fun things I learned about HTML along the way:</p>
+            <p>•	How to insert a pic!</p>
+        <xmp><img src="pic1.png" alt="A Great Site"></xmp>
+        <p>The lineup here is fairly self-explanatory —begin with the typical HTML arrow, followed by “img” to indicate you’re about to point to an image, the “source” of the image (or where to find it), and the alternative text for the image, or “alt.”</p>
+        <p>•	How to insert a URL!</p>
+        <xmp><a href="www.godaddy.com">GoDaddy.com</a></xmp>
+        <p>This one starts with the arrow, the letter “a” to indicate…..that you are about to put A Link I suppose, and then “href.” At first glance, that looks like some nonsense magic word, but as with all programming, it is sorely non-magical at its core. “Href” stands for Hypertext REFerence, a simple signpost that will point you to another Hypertext address — that is to say, another web address beginning with HTTP or HTTPS.</p>
+
+        <p>•	How to insert a code snippit!</p>
+        <xmp><xmp></xmp></xmp>
+        <p>One thing I did NOT figure out, was how to make the background for the text box actually reflect the size of the text I entered. Little by litte, as they asy. </p>
         </div>
     </body>
 </html>

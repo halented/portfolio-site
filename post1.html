@@ -7,8 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Roobs</title>
-    <link rel="stylesheet" type="text/css" href="../css/default.css">
+    <link rel="shortcut icon" type="image/x-icon" href="icon.png" />
+    <title>Ruby.new("bie")</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css">
   </head>
   <body>
 
@@ -22,8 +23,8 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-itme active"><a class="nav-link" href="#">Posts <span class="sr-only">(current)</span></a></li>
                 <li><a class="nav-link" href="#">About <span class="sr-only">(current)</span></a></li>
-                <li><a class="nav-link" href="#">Archive <span class="sr-only">(current)</span></a></li>
                 <li><a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a></li>
+                <li><a class="nav-link" href="testerstuff.html">Bootstrap example page <span class="sr-only">(current)</span></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Log In</a></li>
@@ -51,9 +52,105 @@
                 </div>
                 <div class="col-md-9"> 
                     <article>
-                        <h1>Making a Site...Pretty!</h1>
-                        <p>I hard-coded this lol.</p>
-                        <p></p>
+                        <h1 class="container text-center">Making a Site...Pretty!</h1>
+                        <div class="container text-right small p-0">posted march 8th, 2019</div>
+                        <div class="container text-right small p-0">by<a href="#"> hal</a></div>
+                        <br>
+                        <br>
+                        <body class="container">
+                        <p> From <a href="https://getbootstrap.com/">Bootstrap’s own mouth</a>, it will allow you to:</p>
+
+                        <p> “Build responsive, mobile-first projects on the web with the world’s most popular front-end component library.”</p>
+                            
+                        <p> A lot of that sentence can just wash over you, but let’s break it down a bit:</p>
+                            
+                        <p> “responsive, mobile-first” means that bootstrap is intended to create websites which are reactive to the type of device with which they are being viewed. If your screen is tiny, the site will still be able to present itself in a manageable way. </p>
+                            
+                        <p> “world’s most popular” seems like an opinion but we’ll let that fly, and —</p>
+                            
+                        <p> “front-end component library” is the most important part. </p>
+                            
+                        <p> Bootstrap is a huge, user-friendly library of built-out front-end methods that you can use, or not use, at your discretion to create the look and feel that you need for your site. </p>
+                            
+                        <p> HTML & CSS’s whole main gig is stylizing things through classes. Bootstrap gives you tons and tons of classes which are already stylized and ready to roll. All you have to do is give your project access to Bootstrap’s tools, and use ‘em, babey. </p>
+                            
+                        <p> Because this website is hosted on <a href="https://pages.github.com/">GitHub Pages</a>, I’m using HTML primarily, so I was able to give my project access to Bootstrap using the <a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/#starter-template">template provided on their site</a>. The simplest way of using the template is to copy it and pop it into your index.html file (wherever that may be in your project). More detailed instructions on using Bootstrap in this way can be found on their site here, but we are Rubyists, so we'll take a closer look at how to use it with Rails. </p>
+                            
+                        <p> The best way to incorporate Bootstrap into your rails project is with, you guessed it! Gems. </p>
+                        <p> Once you are inside of your rails project, visit your friendly Gemfile and enter:</p>
+                        <div class="container-fluid text-center"><xmp>gem 'bootstrap', '~> 4.3.1'</xmp></div>
+                        <p> This is the latest/greatest version of bootstrap. You could just use bootstrap without specifying, but the way that it interacts with Rails has changed over time and will surely change in the future, so version control is best practice. This 4.3.1 specification is the appropriate version to use with Rails 5 and above.</p>
+                        <p> Bootstrap also uses Javascript. It doesn't necessarily require you to understand anything about Javascipt, but you will also need to require the appropriate gem using:</p>
+                        <div class="container-fluid text-center"><xmp>gem 'jquery-rails'</xmp></div>
+                        <p>With that completed, you will also need to change let your application know that Bootstrap intends to use Sass rather than regular ol' CSS, so head over to app/assets/stylesheets and change the exension for your application.css file to application.scss. It's still CSS, but just, sassier.</p>
+                        <p> Once you've changed the file extension to understand Bootstrap code, you will then need to import some code into the file itself. It's super tricky. You open the 'application.scss' file and type the following at the bottom:<div class="container-fluid text-center"><xmp>@import "bootstrap";</xmp></div></p>
+                        <p>Code = imported! The final step is related to the aforementioned Javascript use, so we're just going to bust out our copy/paste skills to pop the following code into app/assets/javascripts/application.js:</p>
+                        <p class="container text-center"><xmp>
+                            //= require jquery3
+                            //= require popper
+                            //= require bootstrap-sprockets</xmp></p>
+                        <p>Now all of this is stuff that's detailed in informational page for Bootstrap's Ruby gem which you can find on GitHub <a href="https://github.com/twbs/bootstrap-rubygem">here.</a> With that detailed, we can go into Bootstrap's abilities a little bit. </p>
+                        <p>As I stated in the opening, the point of Bootstrap is to provide a bunch of pre-made style options so that you can spend as little time as possible on your front-end and more time on building your cool, original website with unique functionality. It's similar to Rails in that its functionality takes care of so very much, that you need to set some time apart to become familiar with it and really learn Bootstrap before you can dive into utilizing it as the full, powerful tool library that it is. </p>
+                        <p>I've included on this website a nav-bar link which will show you a slew of basic examples of Bootstrap's influence on the colors and fonts for your page. If you click on it, the first thing you will notice is the annoyingly bright background. One of the reasons that Bootstrap is so popular is because it is designed to be used with "reactive breakpoints" -- the color of the background you are seeing is actually determined by the size of your screen in pixels, and that is customizable. If you take a peek into the code for this, you will see:</p>
+                        <xmp>
+                            <style>
+                                    body{
+                                        background: aqua;
+                                    }
+                                    @media screen and (min-width:576px){
+                                            body{
+                                                background: red;
+                                            }
+                                        }
+                                    @media screen and (min-width:768px){
+                                        body{
+                                            background:blue;
+                                        }
+                                    }
+                                    @media screen and (min-width:992px){
+                                        body{
+                                            background:green;
+                                        }
+                                    }
+                                    @media screen and (min-width:1200px){
+                                        body{
+                                            background:yellow;
+                                        }
+                                    }
+                                
+                            </style>
+                        </xmp>
+                        <p>The @media variable you see it just Bootstrap talking to itself, by providing a keyword to indicate that the size of the screen should be evaluated. Allowing you to command the background's reaction at specific sizes gives you a simple, powerful way to wow your users.</p>
+                        <p>The other vital component to Bootstrap is its use of grids. The grid system keeps your elements organized and prevents you from overlapping your own code. If we take a look back at the example page, you can see the varying changes in position, margins, padding, and other elements.</p>
+                        <p>The grid system is build out of rows and columns, as you might imagine. You should begin your grid with a div tag marked as a "container" or "container-fluid" class, which are two of the classes granted to you by Bootstrap. The only difference between a container and a fluid container is that the fluid one will hit the edges of the window (or "flood" it), whereas the regular container is more boxy.</p>
+                        <xmp>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <!--some code!-->
+                                    </div>
+                                </div>
+                            </div>
+                        </xmp>
+                        <p>The grid system is built out of 12 parts. As you can see here I've included a few more divisions for a row and a column. Within these divisions you can specify how you want that row or column to act. The grid will not allow you to include more than 12 colums per row, and it will default to fill all twelve columns if you tell it there is only one column in that row. Here is an example of some code where we have specified the sizes of the columns:</p>
+                        <xmp>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-9 bg-primary">I am 9 of the twelve</div>
+                                        <div class="col-3 bg-info">I am 3 of the twelve</div>
+                                    </div>
+                                </div>
+                            </xmp>
+                        <p>I gave these classes a few more specifications so that we can see the columns properly -- the "bg-primary" part will just tell it to give that division a background color. Check out the evaluated code below.</p>
+                        <div class="container">
+                                <div class="row">
+                                    <div class="col-9 bg-primary">I am 9 of the twelve</div>
+                                    <div class="col-3 bg-info">I am 3 of the twelve</div>
+                                </div>
+                            </div>
+                            <p></p>
+                        <p>This gives you a basic idea of what the class tags are doing and how you might begin to manipulate them with the grid. That said, Bootstrap is an expansive, fun-as-hell system that would take quite a while to grasp in its entirety, so I encourage anyone reading this to fiddle away! There are tons of tips and walk throughs available from Bootstrap's own documentation <a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/#starter-template">here</a>, and you can also find a wealth of tutorial videos which go in much greater detail on various websites. As a personal recommendation, there is an extremely detailed basics video you can find from the Coding Addict Youtube channel <a href="https://www.youtube.com/watch?v=Uhy3gtZoeOM">right here</a> as well. Happy coding!</p>
+                        </body>
                     </article>
                 </div>
             </div>

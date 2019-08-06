@@ -12,42 +12,42 @@ import dog8 from '../dog8.png';
 
 class Homepage extends Component {
 
-    insta = () => {
-        window.location='https://www.instagram.com/beantheredunnthat/'
+    insta = (path) => {
+        window.open(`https://www.instagram.com/p/${path}`, '_blank')
     }
     
     render() {
         return (
             <>
-            <h1 className='head'>About me</h1>
+            <h1 className='head'>About</h1>
             <div className='displayBox'>
                 <img src={me} alt='its me' id='me'></img>
-                <div id='desc'>I'm Hal. I'm a full-stack software engineer. I'm filling out all these words with words so that you can see how wordy this post full of words is. I love my dogs, and your dogs, and the outdoors. I love the sun, I love the feel of it in the late afternoon when you know it's getting tired but it's still warm, like you. Your skin, sun skin. Your eyelids, thin, full of light. Your vision is glowy red. You aren't sad to be here, but here's only a few minutes. Then it's the evening, which is okay too. </div>
-                <h2>Important Dog Photos</h2>
+                <div id='desc'>I'm Hal. I'm a full-stack software engineer. I love my dogs, your dogs, and Javascript. I'm one of those midwest transplants -- I received my bachelor's degree from Ohio University and learned to code from the <a href='https://flatironschool.com/'>Flatiron School</a> here in Seattle. I'm currently working as a Software Engineering Coach for that same school. I'm always interested in new opportunities/projects!</div>
+                <h2 id='head2'>Important Dog Photos</h2>
                 <div id='dogDiv'>
                     <div className='scrollItem'>
-                        <img src={dog1} alt='dog' className='dog' onClick={this.insta}></img>
+                        <img src={dog1} alt='dog' className='dog' onClick={()=>this.insta('Bn2FgpOB0xL/')}></img>
                     </div>
                     <div className='scrollItem'>
-                        <img src={dog2} alt='dog' className='dog' onClick={this.insta}></img>
+                        <img src={dog2} alt='dog' className='dog' onClick={()=>this.insta('BbXUoRmAb6S/')}></img>
                     </div>
                     <div className='scrollItem'>
-                        <img src={dog3} alt='dog' className='dog' onClick={this.insta}></img>
+                        <img src={dog3} alt='dog' className='dog' onClick={()=>this.insta('BZytMgggbbn/')}></img>
                     </div>
                     <div className='scrollItem'>
-                        <img src={dog4} alt='dog' className='dog' onClick={this.insta}></img>
+                        <img src={dog4} alt='dog' className='dog' onClick={()=>this.insta('BzWeFB4HVph/')}></img>
                     </div>
                     <div className='scrollItem'>
-                        <img src={dog5} alt='dog' className='dog' onClick={this.insta}></img>
+                        <img src={dog5} alt='dog' className='dog' onClick={()=>this.insta('BxVxSdyBopD/')}></img>
                     </div>
                     <div className='scrollItem'>
-                        <img src={dog6} alt='dog' className='dog' onClick={this.insta}></img>
+                        <img src={dog6} alt='dog' className='dog' onClick={()=>this.insta('Br3X2fvhHPs/')}></img>
                     </div>
                     <div className='scrollItem'>
-                        <img src={dog7} alt='dog' className='dog' onClick={this.insta}></img>
+                        <img src={dog7} alt='dog' className='dog' onClick={()=>this.insta('BrF--SZhin_/')}></img>
                     </div>
                     <div className='scrollItem'>
-                        <img src={dog8} alt='dog' className='dog' onClick={this.insta}></img>
+                        <img src={dog8} alt='dog' className='dog' onClick={()=>this.insta('Bl1ZlswBtJm/')}></img>
                     </div>
                 </div>
             </div>

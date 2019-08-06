@@ -3,85 +3,100 @@
   display: grid;
   grid-template: repeat(10, 10%)/ repeat(10, 10%);
   height: 100vh;
-  font-family: 'Darker Grotesque', sans-serif;
-}
-
-.temp {
-  font-family: 'Darker Grotesque', sans-serif;
+  font-family: 'Hind', sans-serif;
 }
 
 h1 {
   grid-row: 2;
   grid-column: 10 span;
-
 }
 
 #homeLink {
   grid-row: 4;
   grid-column: 3/9;
 }
+
 .head {
   grid-row: 1;
-  grid-column: 10 span;
-  opacity: .75;
-  font-size: 350%;
+  /* grid-column: 2/11; */
+  /* position: relative; */
+  position: absolute;
+  top: 0; 
+  right: 0; 
+  border: 0;
+  z-index: 1;
+  opacity: .3;
+  font-size: 2000%;
+  margin: auto;
+  max-height: 100%;
 }
+
 .displayBox {
-  background-color: linen;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid linen;
   grid-row: 3/9;
   grid-column: 3/10;
   display: grid;
   grid-template: repeat(5, 20%)/ repeat(4, 25%);
   border-radius: 10px 15px 10px 15px;
   box-shadow: 5px 5px 0px rgb(206, 200, 193);
+  z-index: 2;
 }
 
 .menu {
+  background-color: white;
   justify-self: center;
-  background-color: rgb(250, 245, 241);
   grid-row: 4/7;
   grid-column: 2 span;
   overflow: scroll;
   width: 80%;
+  border: 2px solid linen;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 5px 5px 0px rgb(206, 200, 193);
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
 }
 
 .links {
+  margin: 4%;
+  padding: 4%;
   text-decoration: none;
   color: black;
+  font-weight: bold;
+  opacity: .7;
 }
 
 img {
   max-width: 100%;
   max-height: 100%;
   border-radius: 8%;
+  opacity: 1;
 }
 
 #me {
-  padding: 5%;
+  margin: 5%;
+  opacity: 1;
 }
 
 #desc {
   grid-column: 2/5;
   grid-row: 1/3;
   margin: 5%;
-  padding: 2%;
   overflow: scroll;
   border-radius: 10%;
   text-justify: auto;
   text-align: center;
-  opacity: .7;
-  border-radius: 2%;
-  border: 1px solid rgb(167, 166, 166);
+  opacity: 1;
 }
 
-h2 {
+#head2 {
   grid-row: 3;
   text-align: center;
-  grid-column: 4 span;
-  opacity: .5;
+  grid-column: 2/5;
   font-size: 205%;
+  text-decoration: underline;
+  opacity: 1;
 }
 
 #dogDiv {
@@ -93,7 +108,7 @@ h2 {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-  border: solid 2px;
+  border: 2px solid linen;
   border-radius: 2%;
 }
 
@@ -110,7 +125,6 @@ h2 {
 #projectWheel {
   grid-column: 2 span;
   grid-row: 4 span;
-  border: solid black 5px;
   margin: 5%;
   overflow: scroll;
   border-radius: 10%;
@@ -119,8 +133,17 @@ h2 {
 #prev {
   grid-column: 3/5;
   grid-row: 4 span;
-  border: solid black 5px;
   margin: 5%;
   overflow: scroll;
   border-radius: 10%;
+}
+
+#prevImage {
+  max-width: 200px;
+  max-height: 100px;
+  display: flex;
+}
+
+li:hover {
+  cursor: pointer;
 }

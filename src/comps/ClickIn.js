@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 const ClickIn= () => {
     return (
         <>
-            <h1>Hi there!</h1>
+            <h1 id='opener'>Hi there!</h1>
             <Button id='homeLink' href='/home'>
                 Enter Site
             </Button>

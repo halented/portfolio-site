@@ -5,7 +5,7 @@ function Silly() {
     
         return (
             <>
-            <h1 className='head'>Side Projects</h1>
+            <h1 className='head'>Other</h1>
             <div className='displayBox'>here's the ones you can't call professional</div>
             <Nav/>
             </>

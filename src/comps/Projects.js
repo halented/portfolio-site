@@ -10,20 +10,43 @@ class Projects extends Component {
     prev.style = {display: ''}
     prev.innerText = ''
     let img = document.createElement('img')
+    img.id = 'prevImage'
+    img.style = 'margin: auto'
     let a1 = document.createElement('a')
+    let a2 = document.createElement('a')
+    a1.target = '_blank'
+    a2.target = '_blank'
+    let p = document.createElement('p')
+    let br = document.createElement('br')
     if(n===1){
-      debugger;
-      img.src = {die}
-      img.id = 'prevImage'
+      img.src = die
       a1.innerText = 'Github Repo'
       a1.href= 'https://github.com/halented/dndeluxe-frontend'
+      a2.innerText = "Live Demo"
+      a2.href = 'http://dndluxe.herokuapp.com/'
+      p.innerText = "Tester account username: 'maeCat' / password: 'woods'. Account information is case sensitive."
     }
     else if(n===2){
-      img.src = {twit}
-      a1.innerText = "i'll mess you up i swear on me mum"
+      img.src = twit
+      a1.innerText = 'Github Repo'
+      a1.href= 'https://github.com/halented/twitflip'
+      a2.innerText = "Live Demo"
+      a2.href = 'http://twitflip.herokuapp.com/'
+      p.innerText = "Tester account username: 'tester'. Account information is case sensitive."
+    }
+    else if(n===3){
+      img.src = twit
+      a1.innerText = 'Github Repo'
+      a1.href= 'https://github.com/halented/twitflip'
+      a2.innerText = "Live Demo"
+      a2.href = 'http://twitflip.herokuapp.com/'
+      p.innerText = "Tester account username: 'tester'. Account information is case sensitive."
     }
     prev.appendChild(img)
     prev.appendChild(a1)
+    prev.appendChild(br)
+    prev.appendChild(a2)
+    prev.appendChild(p)
   }
 
   render(){

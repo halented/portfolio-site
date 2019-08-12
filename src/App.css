@@ -17,18 +17,20 @@ h1 {
 }
 
 .head {
-  grid-row: 1;
+  grid-row: 2 span;
   grid-column: 2/11;
+  max-height: 100vh;
+  max-width: 100%;
   position: relative;
   position: absolute;
   top: 0; 
   right: 0; 
   border: 0;
   z-index: 1;
-  /* opacity: .3; */
-  font-size: 2000%;
-  margin: auto;
-  max-height: 100%;
+  margin-right: 5%;
+  font-size: 500%;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .displayBox {
@@ -40,7 +42,6 @@ h1 {
   grid-template: repeat(5, 20%)/ repeat(4, 25%);
   border-radius: 10px 15px 10px 15px;
   box-shadow: 5px 5px 0px rgb(206, 200, 193);
-  z-index: 2;
 }
 
 .menu {
@@ -55,7 +56,7 @@ h1 {
   box-shadow: 5px 5px 0px rgb(206, 200, 193);
   display: flex;
   flex-direction: column;
-  z-index: 3;
+  align-self: center;
 }
 
 .links {
@@ -158,4 +159,21 @@ li {
   margin: 2%;
   border: 1px solid black;
   border-radius: 3%;
+}
+
+#contactHead {
+  grid-row: 1;
+  grid-column: 3 span;
+}
+
+#contactBox {
+  grid-column: 4;
+  max-width: 100%;
+}
+
+#info {
+  grid-row: 2/5;
+  grid-column: 1/4;
+  margin: auto;
+  padding: 10%;
 }

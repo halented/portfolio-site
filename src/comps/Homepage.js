@@ -19,10 +19,10 @@ class Homepage extends Component {
     render() {
         return (
             <>
-            <h1 className='head'>About</h1>
+            <div className='head'>About</div>
             <div className='displayBox'>
                 <img src={me} alt='its me' id='me'></img>
-                <div id='desc'>I'm Hal. I'm a full-stack software engineer. I love my dogs, your dogs, and Javascript. I'm one of those midwest transplants -- I received my bachelor's degree from Ohio University and learned to code from the <a href='https://flatironschool.com/'>Flatiron School</a> here in Seattle. I'm currently working as a Software Engineering Coach for that same school. I'm always interested in new opportunities/projects!</div>
+                <div id='desc'>I'm Hal. I'm a full-stack software engineer. I love my dogs, all other dogs, and Javascript. I'm one of those midwest transplants -- I received my bachelor's degree from Ohio University and learned to code from the <a href='https://flatironschool.com/'>Flatiron School</a> here in Seattle. I'm currently working as a Software Engineering Coach for that same school. I'm always interested in new opportunities/projects!</div>
                 <h2 id='head2'>Important Dog Photos</h2>
                 <div id='dogDiv'>
                     <div className='scrollItem'>

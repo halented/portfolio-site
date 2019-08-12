@@ -20,10 +20,10 @@ function Contact() {
                     <p>I'd love to chat about your projects, my projects, cool new frameworks, secret old trade tricks, or anything related to the sci-fi genre.</p>
                 </div>
                 <div id='contactBox'>
-                    <img src={twitter}></img>
-                    <img src={fb}></img>
-                    <img src={lnk}></img>
-                    <img src={github}></img>
+                    <img src={twitter}alt='twitter icon'></img>
+                    <img src={fb}alt='facebook icon'></img>
+                    <img src={lnk}alt='linkedIn icon'></img>
+                    <img src={github}alt='github icon'></img>
                 </div>
             </div>
             <Nav/>

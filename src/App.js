@@ -4,7 +4,8 @@ import Homepage from './comps/Homepage';
 import ClickIn from './comps/ClickIn';
 import Projects from './comps/Projects';
 import Contact from './comps/Contact';
-import Silly from './comps/Silly';
+// import Silly from './comps/Silly';
+import Resume from './comps/Resume';
 import './App.css';
 
 class App extends Component {
@@ -18,7 +19,8 @@ class App extends Component {
               <Route exact path='/home' component={Homepage}/>
               <Route exact path='/projects' component={Projects}/>
               <Route exact path='/contact' component={Contact}/>
-              <Route exact path='/other' component={Silly}/>
+              {/* <Route exact path='/other' component={Silly}/> */}
+              <Route exact path='/resume' component={Resume}/>
             </Switch>
         </Router>
       </div>

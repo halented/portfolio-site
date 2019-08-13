@@ -185,3 +185,11 @@ li {
   padding: 10%;
 }
 
+.socials {
+  margin: 2%;
+  padding-top: 3%;
+}
+
+.socials:hover {
+  cursor: pointer;
+}

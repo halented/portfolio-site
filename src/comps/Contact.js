@@ -20,10 +20,10 @@ function Contact() {
                     <p>I'd love to chat about your projects, my projects, cool new frameworks, secret old trade tricks, or anything related to the sci-fi genre.</p>
                 </div>
                 <div id='contactBox'>
-                    <img src={twitter}alt='twitter icon' onClick={()=>window.open(`https://www.twitter.com/coyodeHal`, '_blank')}></img>
-                    <img src={dev}alt='dev.to icon' onClick={()=>window.open(`https://dev.to/halented`, '_blank')}></img>
-                    <img src={lnk}alt='linkedIn icon' onClick={()=>window.open(`https://www.linkedin.com/in/halented/`, '_blank')}></img>
-                    <img src={github}alt='github icon' onClick={()=>window.open(`https://github.com/halented`, '_blank')}></img>
+                    <img className='socials' src={twitter}alt='twitter icon' onClick={()=>window.open(`https://www.twitter.com/coyodeHal`, '_blank')}></img>
+                    <img className='socials' src={dev}alt='dev.to icon' onClick={()=>window.open(`https://dev.to/halented`, '_blank')}></img>
+                    <img className='socials' src={lnk}alt='linkedIn icon' onClick={()=>window.open(`https://www.linkedin.com/in/halented/`, '_blank')}></img>
+                    <img className='socials' src={github}alt='github icon' onClick={()=>window.open(`https://github.com/halented`, '_blank')}></img>
                 </div>
             </div>
             <Nav/>

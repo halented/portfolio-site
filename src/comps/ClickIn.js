@@ -5,11 +5,11 @@ const ClickIn= () => {
     return (
         <>
             <h1 id='opener'>Hi there!</h1>
-            <Button id='homeLink' href='/home'>
+            <Button id='homeLink' href='/#/home'>
                 Enter Site
             </Button>
         </>
     )
 }
 
-export default ClickIn;
+export default ClickIn; 

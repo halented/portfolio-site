@@ -97,7 +97,6 @@ img {
   text-align: center;
   grid-column: 2/5;
   font-size: 205%;
-  text-decoration: underline;
   opacity: 1;
 }
 
@@ -118,6 +117,10 @@ img {
   display: inline-block;
   margin-left: 2px;
   margin-right: 2px;
+}
+
+.scrollItem:hover {
+  cursor: pointer;
 }
 
 .dog {

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import Nav from './Nav';
-import me from '../closeup.png';
-import dog1 from '../dog1.png';
-import dog2 from '../dog2.png';
-import dog3 from '../dog3.png';
-import dog4 from '../dog4.png';
-import dog5 from '../dog5.png';
-import dog6 from '../dog6.png';
-import dog7 from '../dog7.png';
-import dog8 from '../dog8.png';
+import me from '../images/closeup.png';
+import dog1 from '../images/dog1.png';
+import dog2 from '../images/dog2.png';
+import dog3 from '../images/dog3.png';
+import dog4 from '../images/dog4.png';
+import dog5 from '../images/dog5.png';
+import dog6 from '../images/dog6.png';
+import dog7 from '../images/dog7.png';
+import dog8 from '../images/dog8.png';
 
 class Homepage extends Component {
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import Nav from './Nav';
-import twitter from '../twitter.png';
-import fb from '../fb.jpg';
-import lnk from '../linkedIn.png';
-import github from '../github.png';
+import twitter from '../images/twitter.png'
+import fb from '../images/fb.jpg'
+import lnk from '../images/linkedIn.png'
+import github from '../images/github.png'
 
 
 function Contact() {

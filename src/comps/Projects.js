@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Nav from './Nav';
-import twit from '../twit.png';
-import die from '../die.png';
-import java from '../javathescript.png';
+import twit from '../images/twit.png';
+import die from '../images/die.png';
+import java from '../images/javathescript.png';
 
 class Projects extends Component {
 

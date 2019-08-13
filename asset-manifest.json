@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bd0d177d.chunk.css",
+    "main.js": "/static/js/main.e693ed5b.chunk.js",
+    "main.js.map": "/static/js/main.e693ed5b.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.bca6dc5a.chunk.js": "/static/js/2.bca6dc5a.chunk.js",
+    "static/js/2.bca6dc5a.chunk.js.map": "/static/js/2.bca6dc5a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.62ec72e1c2d08ffe96b0d240c73f567e.js": "/precache-manifest.62ec72e1c2d08ffe96b0d240c73f567e.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.bd0d177d.chunk.css.map": "/static/css/main.bd0d177d.chunk.css.map",
+    "static/media/closeup.png": "/static/media/closeup.060ec8b6.png",
+    "static/media/die.png": "/static/media/die.2649defe.png",
+    "static/media/dog1.png": "/static/media/dog1.4402db07.png",
+    "static/media/dog2.png": "/static/media/dog2.795064bb.png",
+    "static/media/dog3.png": "/static/media/dog3.9a890fbd.png",
+    "static/media/dog4.png": "/static/media/dog4.f363cace.png",
+    "static/media/dog5.png": "/static/media/dog5.7b9cfaed.png",
+    "static/media/dog6.png": "/static/media/dog6.bd9f6087.png",
+    "static/media/dog7.png": "/static/media/dog7.349c6fae.png",
+    "static/media/dog8.png": "/static/media/dog8.f96b0e91.png",
+    "static/media/javathescript.png": "/static/media/javathescript.ae19cce8.png",
+    "static/media/twit.png": "/static/media/twit.a1d4caa8.png"
+  }
+}

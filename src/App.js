@@ -13,11 +13,11 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-              <Route exact path='/' component={ClickIn}/>
-              <Route path='/home' component={Homepage}/>
-              <Route exact path='/projects' component={Projects}/>
-              <Route exact path='/contact' component={Contact}/>
-              <Route exact path='/resume' component={Resume}/>
+              <Route exact path={process.env.PUBLIC_URL + '/'} component={ClickIn}/>
+              <Route path={process.env.PUBLIC_URL + '/home'} component={Homepage}/>
+              <Route exact path={process.env.PUBLIC_URL + '/projects'} component={Projects}/>
+              <Route exact path={process.env.PUBLIC_URL + '/contact'} component={Contact}/>
+              <Route exact path={process.env.PUBLIC_URL + '/resume'} component={Resume}/>
         </Router>
       </div>
     );

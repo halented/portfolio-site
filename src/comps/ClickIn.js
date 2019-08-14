@@ -5,7 +5,7 @@ import { withRouter } from 'react-router'
 class ClickIn extends Component {
 
     routerFix = () => {
-        this.props.history.push(`/home`)
+        this.props.history.push(`/#/home`)
     }
 
     render() {

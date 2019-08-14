@@ -212,6 +212,7 @@ li {
   grid-row: 2/3;
   grid-column: 10 span;
   margin: auto;
+  padding-top: 3%;
   position: relative;
   font-size: 300%;
  }

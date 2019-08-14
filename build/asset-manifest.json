@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.f2a3bf62.chunk.css",
+    "main.css": "/static/css/main.e8d2f197.chunk.css",
     "main.js": "/static/js/main.700d96ad.chunk.js",
     "main.js.map": "/static/js/main.700d96ad.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
@@ -8,9 +8,9 @@
     "static/js/2.a3208116.chunk.js": "/static/js/2.a3208116.chunk.js",
     "static/js/2.a3208116.chunk.js.map": "/static/js/2.a3208116.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7facb1718e36ade55ae1b4fba485bcd6.js": "/precache-manifest.7facb1718e36ade55ae1b4fba485bcd6.js",
+    "precache-manifest.d2bd46fdbd7b64e9fe9e52797682188f.js": "/precache-manifest.d2bd46fdbd7b64e9fe9e52797682188f.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.f2a3bf62.chunk.css.map": "/static/css/main.f2a3bf62.chunk.css.map",
+    "static/css/main.e8d2f197.chunk.css.map": "/static/css/main.e8d2f197.chunk.css.map",
     "static/media/closeup.png": "/static/media/closeup.060ec8b6.png",
     "static/media/die.png": "/static/media/die.2649defe.png",
     "static/media/dog1.png": "/static/media/dog1.4402db07.png",

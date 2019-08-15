@@ -198,14 +198,7 @@ li {
 /* screen size alterations */
 
 @media only screen and (max-width: 600px){
- .App {
-   /* background-color: blue; */
- }
  #me {
-   /* margin: 6%;
-   margin-top: 15%;
-   grid-row: 2 span;
-   grid-column: 8/10; */
    display: none;
  }
  .head {
@@ -240,6 +233,6 @@ li {
 
 @media only screen and (min-width: 1200px) {
   .App {
-    background-color: red;
+    /* background-color: red; */
   }
 }

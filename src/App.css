@@ -195,7 +195,7 @@ li {
 .socials:hover {
   cursor: pointer;
 }
-/* screen size alterations */
+/* mobile screen */
 
 @media only screen and (max-width: 600px){
  #me {
@@ -230,9 +230,9 @@ li {
    margin: 3%;
  }
 }
-
-@media only screen and (min-width: 1200px) {
+/* large screen */
+/* @media only screen and (min-width: 1200px) {
   .App {
-    /* background-color: red; */
+    background-color: red;
   }
-}
+} */

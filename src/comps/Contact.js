@@ -14,7 +14,7 @@ function Contact() {
             <div className='displayBox'>
                 <h2 id='contactHead'>Please get in touch!</h2>
                 <div id='info'>
-                    <p> <strong>Email:</strong> hallie.dunn1@gmail.com</p>
+                    <p> <strong>Email:</strong> heyHal@halented.com</p>
                     <p> <strong>Mobile:</strong> 937.304.5738</p>
                     <br/>
                     <p>I'd love to chat about your projects, my projects, cool new frameworks, secret old trade tricks, or anything related to the sci-fi genre.</p>

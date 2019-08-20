@@ -19,6 +19,7 @@ class Projects extends Component {
     a2.target = '_blank'
     let p = document.createElement('p')
     let br = document.createElement('br')
+    let br2 = document.createElement('br')
     if(n===1){
       img.src = die
       a1.innerText = 'Github Repo'
@@ -45,6 +46,7 @@ class Projects extends Component {
       p.innerText = "Please clone both front and backend repositories to play the game locally!"
     }
     prev.appendChild(img)
+    prev.appendChild(br2)
     prev.appendChild(a1)
     prev.appendChild(br)
     prev.appendChild(a2)
@@ -63,7 +65,7 @@ class Projects extends Component {
             <li onClick={()=>this.populateDeets(3)}><strong>Java the Script</strong> - A single page Javascript-based game. Users control a hero who must defeat all enemies on the page.</li>
           </ul> 
         </div>
-        <div id='prev' style={{display: 'none'}}>project preview</div>
+        <div id='prev'>Click a project for more information!</div>
       </div>
       <Nav/>
       </>

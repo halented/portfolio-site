@@ -150,10 +150,11 @@ img {
   margin: 5%;
   margin-top: 20%;
   box-shadow: 5px 5px 0px rgb(224, 217, 208);
+  align-self: center;
 }
 
 #prevImage {
-  max-width: 200px;
+  max-width: 100%;
   max-height: 100px;
 }
 

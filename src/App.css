@@ -197,6 +197,10 @@ li {
 .socials:hover {
   cursor: pointer;
 }
+
+#small {
+  display: none;
+}
 /* mobile screen */
 
 @media only screen and (max-width: 600px){
@@ -234,6 +238,14 @@ li {
 
  #dogDiv {
   border: none;
+ }
+
+ #small {
+   display: block;
+ }
+
+ #big {
+   display: none;
  }
 }
 

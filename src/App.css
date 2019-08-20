@@ -231,6 +231,10 @@ li {
    grid-row: 3/11;
    margin: 3%;
  }
+
+ #dogDiv {
+  border: none;
+ }
 }
 
 @media only screen and (max-width: 320px){

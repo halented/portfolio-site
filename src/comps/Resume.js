@@ -1,13 +1,16 @@
 import React from 'react';
+// import { Document } from 'react-pdf'
+// import doc from '../resume.pdf'
 
 function Resume() {
     
         return (
             <>
-            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS8vVkIqkIOwYPj5Fjw6O6gR8w8VPx6caVAIinBkLRBJwZLGerMlGOjFll7KTyjDtwOyVxEHysOuxQm/embed?start=false&loop=false&delayms=3000" frameborder="0" width="408" height="557" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" title='resume' id='small'></iframe>
-            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS8vVkIqkIOwYPj5Fjw6O6gR8w8VPx6caVAIinBkLRBJwZLGerMlGOjFll7KTyjDtwOyVxEHysOuxQm/embed?start=false&loop=false&delayms=3000" frameborder="0" width="816" height="1085" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" title='resume big' id='big'></iframe>
+            <a href="https://www.canva.com/design/DADzi9s9gW8/GNswvIF4os0mdqZKFSNokw/view?utm_content=DADzi9s9gW8&utm_campaign=designshare&utm_medium=link&utm_source=viewer" target="_blank">Resume</a>
             </>
         )
 }
 
 export default Resume;
+
+

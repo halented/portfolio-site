@@ -10,7 +10,7 @@ function Nav() {
                 <Link to='/home' className='links'>About</Link>
                 <Link to='/projects' className='links'>Projects</Link>
                 <Link to='/contact' className='links'>Contact</Link>
-                <Link to='/resume' className='links'>Resume</Link>
+                <a href="https://www.canva.com/design/DADzi9s9gW8/GNswvIF4os0mdqZKFSNokw/view?utm_content=DADzi9s9gW8&utm_campaign=designshare&utm_medium=link&utm_source=viewer" target="_blank" className='links'>Resume</a>
             </div>
             </>
         )

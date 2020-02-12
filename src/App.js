@@ -4,7 +4,6 @@ import Homepage from './comps/Homepage';
 import ClickIn from './comps/ClickIn';
 import Projects from './comps/Projects';
 import Contact from './comps/Contact';
-import Resume from './comps/Resume';
 import './App.css';
 
 class App extends Component {
@@ -17,7 +16,6 @@ class App extends Component {
                 <Route path={process.env.PUBLIC_URL + '/home'} component={Homepage}/>
                 <Route exact path={process.env.PUBLIC_URL + '/projects'} component={Projects}/>
                 <Route exact path={process.env.PUBLIC_URL + '/contact'} component={Contact}/>
-                <Route exact path={process.env.PUBLIC_URL + '/resume'} component={Resume}/>
         </div>
       </HashRouter>
     );

@@ -24,10 +24,10 @@ class Projects extends Component {
     }
     this.setState({showProject: true, selectedProject, image})
   }
-  
+
   populateProjects = () => {
     return projects.map(project=>{
-      return <li onClick={()=>this.populateDeets(project.id)}><strong>{project.name}</strong> {project.sideDesc}</li>
+      return <li onClick={()=>this.populateDeets(project.id)} key={project.id}><strong>{project.name}</strong> {project.sideDesc}</li>
     })
   }
 

@@ -157,6 +157,8 @@ img {
 #prevImage {
   max-width: 100%;
   max-height: 100px;
+  margin: 'auto';
+  margin-bottom: 10%;
 }
 
 ul {

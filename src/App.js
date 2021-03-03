@@ -1,11 +1,11 @@
-import './App.css';
+import './App.css'
+import SiteMenu from './SiteMenu'
+
 
 function App() {
-  return (
-    <div className="App">
-
-    </div>
-  );
+    return (
+        <SiteMenu />
+    )
 }
 
-export default App;
+export default App

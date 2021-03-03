@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Menu } from 'antd';
+import { Menu, Divider } from 'antd';
 import { CloseOutlined, MenuOutlined } from '@ant-design/icons';
 
 const { SubMenu } = Menu;
@@ -16,26 +16,31 @@ const SiteMenu = () => {
   }
 
   return (
-    <Menu
-      onClick={menuSelect}
-      style={{ paddingLeft: '46.5%' }}
-      defaultSelectedKeys={['1']}
-      defaultOpenKeys={['']}
-      mode="inline"
-      expandIcon={<div />}
-    >
-      <SubMenu
-        key="sub1"
-        icon={determineIcon()}
-        title=""
-        onTitleClick={() => setShowOptions(prev => !prev)}
+    <div style={{ padding: '5%' }}>
+      <Menu
+        onClick={menuSelect}
+        // style={{ paddingLeft: '46.5%' }}
+        style={{ display: 'flex', justifyContent: 'center', marginTop: '2%' }}
+        defaultSelectedKeys={['1']}
+        defaultOpenKeys={['']}
+        mode="inline"
+        expandIcon={<div />}
       >
-        <Menu.Item key="1">Portfolio</Menu.Item>
-        <Menu.Item key="2">Contact</Menu.Item>
-        <Menu.Item key="3">Resume</Menu.Item>
-        <Menu.Item key="4">Dog Pics</Menu.Item>
-      </SubMenu>
-    </Menu>
+        <SubMenu
+          key="sub1"
+          icon={determineIcon()}
+          title=""
+          onTitleClick={() => setShowOptions(prev => !prev)}
+          style={{ width: '100px' }}
+        >
+          <Menu.Item key="1">Portfolio</Menu.Item>
+          <Menu.Item key="2">Contact</Menu.Item>
+          <Menu.Item key="3">Resume</Menu.Item>
+          <Menu.Item key="4">Dog Pics</Menu.Item>
+        </SubMenu>
+      </Menu>
+      <Divider style={{ marginTop: '0%' }}></Divider>
+    </div>
   )
 }
 

@@ -12,6 +12,7 @@ export const styles = {
     },
     menuItem: {
         margin: '0%',
-        padding: '0%'
+        padding: '0%',
+        height: '40%'
     }
 }

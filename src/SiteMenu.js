@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import { Menu, Divider } from 'antd';
-import { CloseOutlined, MenuOutlined } from '@ant-design/icons';
+import { CloseCircleOutlined, MenuOutlined, DownCircleOutlined } from '@ant-design/icons';
 import { styles } from './styles'
-
-const { SubMenu } = Menu;
 
 const SiteMenu = () => {
   const [menuOpen, setmenuOpen] = useState(false)
@@ -24,12 +22,16 @@ const SiteMenu = () => {
   const allMenuOptions = () => {
     return (
       <>
-        <CloseOutlined style={{ fontSize: '25px' }} onClick={toggleMenu} />
-        <Menu style={styles.dropdown}>
-          <Menu.Item key="1" style={styles.menuItem}>Portfolio</Menu.Item>
-          <Menu.Item key="2" style={styles.menuItem}>Contact</Menu.Item>
-          <Menu.Item key="3" style={styles.menuItem}>Resume</Menu.Item>
-          <Menu.Item key="4" style={styles.menuItem}>Dog Pics</Menu.Item>
+        <CloseCircleOutlined style={{ fontSize: '25px' }} onClick={toggleMenu} />
+        <Menu
+          style={styles.dropdown}
+          onClick={menuSelect}
+        >
+          {/* ::selection in css could change the color when clicked */}
+          <Menu.Item key="1" style={styles.menuItem} className='menuItem'>Portfolio</Menu.Item>
+          <Menu.Item key="2" style={styles.menuItem} className='menuItem'>Contact</Menu.Item>
+          <Menu.Item key="3" style={styles.menuItem} className='menuItem'>Resume</Menu.Item>
+          <Menu.Item key="4" style={styles.menuItem} className='menuItem'>Dog Pics</Menu.Item>
         </Menu>
       </>
     )
@@ -38,7 +40,7 @@ const SiteMenu = () => {
   return (
     <div style={styles.menuBox}>
       <div style={{ display: 'inline-grid' }}>
-        {menuOpen ? allMenuOptions() : <MenuOutlined style={{ fontSize: '25px' }} onClick={openMenu} />}
+        {menuOpen ? allMenuOptions() : <DownCircleOutlined style={{ fontSize: '25px' }} onClick={openMenu} />}
       </div>
       <Divider />
     </div>

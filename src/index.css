@@ -17,5 +17,6 @@ code {
 }
 
 .menuItem::selection {
-  color: #9ac6c8ff;
+  color: rgb(61, 61, 61);
+  color: aliceblue;
 }

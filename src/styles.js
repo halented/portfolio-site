@@ -1,6 +1,7 @@
 export const styles = {
     menuBox: {
         padding: '5%',
+        paddingTop: '2.5%',
         display: 'flex',
         justifyContent: 'center',
         flexDirection: 'column'

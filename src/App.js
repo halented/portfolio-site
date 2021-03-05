@@ -2,8 +2,6 @@ import './App.css'
 import SiteMenu from './SiteMenu'
 import { Contact, DogPics, Profile, Projects } from './pages/bundler'
 import { HashRouter, Route } from 'react-router-dom';
-import { Layout } from 'antd'
-const { Header } = Layout
 
 
 function App() {

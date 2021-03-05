@@ -9,7 +9,8 @@ export const styles = {
     dropdown: {
         display: 'flex',
         alignItems: 'center',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        border: 'none'
     },
     menuItem: {
         margin: '0%',

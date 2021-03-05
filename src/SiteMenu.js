@@ -8,6 +8,7 @@ const SiteMenu = () => {
 
   const menuSelect = (e) => {
     console.log(e)
+    setmenuOpen(prev => !prev)
   }
 
   const toggleMenu = () => {
@@ -43,7 +44,7 @@ const SiteMenu = () => {
       <div style={{ display: 'inline-grid' }}>
         {menuOpen ? allMenuOptions() : <DownCircleOutlined style={{ fontSize: '25px', color: 'rgb(70,70,70)' }} onClick={openMenu} />}
       </div>
-      <Divider />
+      <Divider style={{ marginTop: '1%' }} />
     </div>
   )
 }

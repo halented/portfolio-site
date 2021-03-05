@@ -1,7 +1,9 @@
+import HeaderCustom from './bones/HeaderCustom'
+import { styles } from '../styles'
 
 function Profile() {
     return (
-        <div>it's the profie</div>
+        <HeaderCustom pageName='profile' />
     )
 }
 

@@ -1,8 +1,10 @@
 import React from 'react'
+import HeaderCustom from './bones/HeaderCustom'
+
 
 function DogPics() {
     return (
-        <div>pics here</div>
+        <HeaderCustom pageName='dog pics' />
     )
 }
 

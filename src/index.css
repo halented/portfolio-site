@@ -16,10 +16,6 @@ code {
   color: #9ac6c8ff;
 }
 
-.ant-menu-item::selection {
-  color: rgb(61, 61, 61);
-}
-
 .ant-menu-item a:hover {
   color: #9ac6c8ff;
 }

@@ -1,8 +1,9 @@
 import React from 'react'
+import HeaderCustom from './bones/HeaderCustom'
 
 function Projects() {
     return (
-        <div>projs</div>
+        <HeaderCustom pageName='projects' />
     )
 }
 

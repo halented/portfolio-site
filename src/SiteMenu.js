@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Menu, Divider } from 'antd';
-import { CloseCircleOutlined, MenuOutlined, DownCircleOutlined } from '@ant-design/icons';
+import { CloseCircleOutlined, DownCircleOutlined } from '@ant-design/icons';
 import { styles } from './styles'
 
 const SiteMenu = () => {

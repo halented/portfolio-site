@@ -1,16 +1,22 @@
 import './App.css'
 import SiteMenu from './SiteMenu'
-import Layout from 'antd'
+import { Contact, DogPics, Profile, Projects } from './pages/bundler'
+import { HashRouter, Route } from 'react-router-dom';
+import { Layout } from 'antd'
 const { Header } = Layout
 
 
 function App() {
     return (
-        <Layout>
-            <Header>
-                <SiteMenu />
-            </Header>
-        </Layout>
+        <HashRouter basename='/'>
+            <SiteMenu />
+            <div>
+                <Route exact path={process.env.PUBLIC_URL + '/'} component={Profile} />
+                <Route path={process.env.PUBLIC_URL + '/projects'} component={Projects} />
+                <Route path={process.env.PUBLIC_URL + '/contact'} component={Contact} />
+                <Route path={process.env.PUBLIC_URL + '/dog-pics'} component={DogPics} />
+            </div>
+        </HashRouter>
     )
 }
 

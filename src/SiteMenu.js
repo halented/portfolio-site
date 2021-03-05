@@ -7,11 +7,6 @@ import { styles } from './styles'
 const SiteMenu = () => {
   const [menuOpen, setmenuOpen] = useState(false)
 
-  const menuSelect = (e) => {
-    console.log(e)
-    setmenuOpen(prev => !prev)
-  }
-
   const toggleMenu = () => {
     setmenuOpen(prev => !prev)
   }
@@ -27,10 +22,8 @@ const SiteMenu = () => {
         <CloseCircleOutlined style={{ fontSize: '25px', color: 'rgb(70,70,70)' }} onClick={toggleMenu} />
         <Menu
           style={styles.dropdown}
-          onClick={menuSelect}
+          onClick={toggleMenu}
         >
-          {/* ::selection in css could change the color when clicked */}
-          {/* should also look into https://stackoverflow.com/questions/58041379/how-to-customize-and-change-color-of-a-menu-in-ant-design after you get the react router links in here */}
           <Menu.Item key="1" className='menuItem' style={styles.menuItem}>
             <Link to='/'>
               Portfolio

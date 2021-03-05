@@ -1,3 +1,4 @@
+const textAlign = 'center'
 export const styles = {
     menuBox: {
         padding: '5%',
@@ -21,6 +22,24 @@ export const styles = {
     headers: {
         marginTop: '0%',
         backgroundColor: '#9ac6c8ff',
-        textAlign: 'center'
+        textAlign,
+        fontSize: 'large'
+    },
+    pageName: {
+        fontWeight: '700',
+        fontFamily: "'Comfortaa', cursive"
+    },
+    profileHeader: {
+        textAlign,
+        fontFamily: "'Comfortaa', cursive"
+    },
+    infoBody: {
+        textAlign,
+        fontFamily: "'Courier New', monospace"
+    },
+    buttonBox: {
+        display: 'flex',
+        justifyContent: 'space-evenly',
+        marginTop: '10%'
     }
 }

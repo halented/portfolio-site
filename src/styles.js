@@ -41,5 +41,10 @@ export const styles = {
         display: 'flex',
         justifyContent: 'space-evenly',
         marginTop: '10%'
+    },
+    contactBox: {
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column',
     }
 }

@@ -10,11 +10,3 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-
-.menuItem:hover {
-  color: #9ac6c8ff;
-}
-
-.ant-menu-item a:hover {
-  color: #9ac6c8ff;
-}

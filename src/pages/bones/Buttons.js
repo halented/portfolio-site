@@ -6,13 +6,13 @@ function Buttons() {
     return (
         <div style={styles.buttonBox}>
             <Link to='/projects'>
-                <Button style={{ backgroundColor: '#9ac6c8ff' }}>
-                    projects
+                <Button style={{ backgroundColor: '#9ac6c8ff', fontWeight: 'bold' }}>
+                    PROJECTS
                 </Button>
             </Link>
             <Link to='contact'>
-                <Button style={{ backgroundColor: '#9ac6c8ff' }}>
-                    contact
+                <Button style={{ backgroundColor: '#9ac6c8ff', fontWeight: 'bold' }}>
+                    CONTACT
                 </Button>
             </Link>
         </div>

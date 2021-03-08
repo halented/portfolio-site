@@ -44,16 +44,24 @@ export const styles = {
     },
     contactBox: {
         display: 'flex',
-        alignItems: 'center',
-        flexDirection: 'column',
-        width: '100%',
-        margin: 'auto'
+        flexDirection: 'column'
     },
     contactPoint: {
         display: 'flex',
         flexDirection: 'row',
-        width: '100%',
-        marginLeft: '65%',
-        alignItems: 'center'
+        justifyContent: 'center'
+    },
+    contactIcon: {
+        fontSize: 50,
+        width: '50%',
+        display: 'flex',
+        justifyContent: 'flex-end',
+        paddingRight: '8%'
+    },
+    contactDetail: {
+        fontSize: 25,
+        width: '50%',
+        display: 'flex',
+        justifyContent: 'flex-start'
     }
 }

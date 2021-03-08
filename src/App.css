@@ -6,6 +6,11 @@
   color: #9ac6c8ff;
 }
 
+.ant-card-bordered {
+  border-left: none;
+  border-right: none;
+}
+
 a {
   color: rgb(108, 152, 155);
 }

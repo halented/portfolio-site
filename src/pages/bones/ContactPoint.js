@@ -1,3 +1,4 @@
+import ReactTooltip from 'react-tooltip'
 import { styles } from '../../styles'
 import {
     PhoneOutlined,
@@ -19,7 +20,10 @@ const iconsMap = {
 
 const detailsMap = {
     "phone": "206-551-5709",
-    "email": "heyhal19@gmail.com",
+    "email": <a
+        data-for='email'
+        data-tip={"heyhal19@gmail.com"}
+        href="mailto:heyhal19@gmail.com">HeyHal19</a>,
     "github": <a
         href="https://github.com/halented"
         target='_blank'
@@ -48,6 +52,13 @@ function ContactPoint({ point }) {
             {iconsMap[[point]]}
             <div style={styles.contactDetail}>
                 {detailsMap[[point]]}
+                {point === "email" ? <ReactTooltip
+                    id="email"
+                    place={"top"}
+                    type={"dark"}
+                    effect={"solid"}
+                    multiline={true}
+                /> : null}
             </div>
         </div>
     )

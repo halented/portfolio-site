@@ -15,7 +15,7 @@ function Contact() {
             <HeaderCustom pageName='contact' />
             <Card>
                 <div style={styles.contactBox}>
-                    {points.map(point => <ContactPoint point={point} />)}
+                    {points.map(point => <ContactPoint point={point} key={point} />)}
                 </div>
             </Card>
         </>

@@ -46,5 +46,14 @@ export const styles = {
         display: 'flex',
         alignItems: 'center',
         flexDirection: 'column',
+        width: '100%',
+        margin: 'auto'
+    },
+    contactPoint: {
+        display: 'flex',
+        flexDirection: 'row',
+        width: '100%',
+        marginLeft: '65%',
+        alignItems: 'center'
     }
 }

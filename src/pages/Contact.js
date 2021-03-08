@@ -7,14 +7,13 @@ import { styles } from '../styles'
 import { Card } from 'antd'
 
 
+const points = ["phone", "email", "github", "linkedin", "blog", "twitter"]
 
-const points = ["phone", "email", "github", "blog", "linkedin", "twitter"]
 function Contact() {
     return (
         <>
             <HeaderCustom pageName='contact' />
             <Card>
-                {/* outter div should just be flex align center vert */}
                 <div style={styles.contactBox}>
                     {points.map(point => <ContactPoint point={point} />)}
                 </div>

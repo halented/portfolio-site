@@ -19,7 +19,7 @@ const iconsMap = {
 }
 
 const detailsMap = {
-    "phone": "206-551-5709",
+    "phone": <a href="tel:206-551-5709">206-551-5709</a>,
     "email": <a
         data-for='email'
         data-tip={"heyhal19@gmail.com"}
@@ -58,7 +58,6 @@ function ContactPoint({ point }) {
                     place={"top"}
                     type={"dark"}
                     effect={"solid"}
-                    multiline={true}
                 /> : null}
             </div>
         </div>

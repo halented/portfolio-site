@@ -13,7 +13,7 @@ function Projects() {
         <>
             <HeaderCustom pageName='projects' />
             <Card style={styles.projectBox}>
-                {projects.map(project => <ProjectCard project={project} />)}
+                {projects.map(project => <ProjectCard project={project} key={project} />)}
             </Card>
         </>
     )

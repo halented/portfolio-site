@@ -10,7 +10,7 @@ const imagesMap = {
 }
 
 function ProjectImage({ project, flipCard }) {
-    const alt = `hosted visual for ${project} project`
+    const alt = `screenshot of ${project} project`
     return (
         <img
             src={imagesMap[[project]]}

@@ -51,7 +51,8 @@ export const styles = {
     contactPoint: {
         display: 'flex',
         flexDirection: 'row',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        width: '90%'
     },
     contactIcon: {
         fontSize: 50,
@@ -85,5 +86,12 @@ export const styles = {
     projectDetails: {
         ...verticalBox,
         width: '51%'
+    },
+    projectBlurb: {
+        position: "absolute",
+        padding: '5%',
+        overflow: 'scroll',
+        maxWidth: '80%',
+        maxHeight: '25%'
     }
 }

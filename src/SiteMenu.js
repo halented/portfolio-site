@@ -26,7 +26,7 @@ const SiteMenu = () => {
         >
           <Menu.Item key="1" className='menuItem' style={styles.menuItem}>
             <Link to='/'>
-              Profile
+              About
             </Link>
           </Menu.Item>
           <Menu.Item key="2" className='menuItem' style={styles.menuItem}>

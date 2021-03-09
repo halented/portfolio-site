@@ -11,7 +11,7 @@ import { styles } from '../styles'
 function Profile() {
     return (
         <>
-            <HeaderCustom pageName='profile' />
+            <HeaderCustom pageName='about' />
             <Card>
                 <h1 style={styles.profileHeader}>
                     FULL STACK SOFTWARE ENGINEER

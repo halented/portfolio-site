@@ -93,5 +93,11 @@ export const styles = {
         overflow: 'scroll',
         maxWidth: '80%',
         maxHeight: '25%'
+    },
+    dogPic: {
+        width: '50%',
+        padding: '1%',
+        borderRadius: '10px',
+        transition: 'transform .3s'
     }
 }

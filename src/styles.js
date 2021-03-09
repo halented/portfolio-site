@@ -23,7 +23,7 @@ export const styles = {
         marginTop: '0%',
         backgroundColor: '#9ac6c8ff',
         textAlign,
-        fontSize: 'large'
+        fontSize: 20
     },
     pageName: {
         fontWeight: '700',

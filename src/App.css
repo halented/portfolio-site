@@ -7,8 +7,7 @@
 }
 
 .ant-card-bordered {
-  border-left: none;
-  border-right: none;
+  border: none;
 }
 
 a {
@@ -17,4 +16,13 @@ a {
 a:hover {
   font-weight: 700;
   color: rgb(108, 152, 155);
+}
+.ant-btn {
+  border: 0.5px solid white;
+}
+
+.ant-btn:hover {
+  color: white;
+  --antd-wave-shadow-color: rgb(0, 0, 0);
+  border: 0.5px solid black;
 }

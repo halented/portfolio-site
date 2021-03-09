@@ -63,5 +63,15 @@ export const styles = {
         width: '50%',
         display: 'flex',
         justifyContent: 'flex-start'
+    },
+    projectBox: {
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column',
+        width: '100%',
+        overflow: 'scroll'
+    },
+    projectCard: {
+
     }
 }

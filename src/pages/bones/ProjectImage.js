@@ -1,8 +1,17 @@
-import React from 'react'
+import DnDLuxe from '../../images/dndluxe.png'
+import Twitflip from '../../images/twitflip.png'
+import Finally from '../../images/finally.png'
+import { styles } from '../../styles'
 
-function ProjectImage() {
+const imagesMap = {
+    "Twitflip": Twitflip,
+    "DnDLuxe": DnDLuxe,
+    "Finally": Finally
+}
+
+function ProjectImage({ project, flipCard }) {
     return (
-        <div>the image</div>
+        <img src={imagesMap[[project]]} style={styles.projectImage} className='projectImage' onClick={flipCard} />
     )
 }
 

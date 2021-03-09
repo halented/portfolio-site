@@ -6,7 +6,7 @@ import ProjectCard from './ProjectCard'
 import { Card } from 'antd'
 import { styles } from '../styles'
 
-const projects = ["finally", "dndluxe", "twitflip"]
+const projects = ["Finally", "DnDLuxe", "Twitflip"]
 
 function Projects() {
     return (

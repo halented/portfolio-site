@@ -26,3 +26,15 @@ a:hover {
   --antd-wave-shadow-color: rgb(0, 0, 0);
   border: 0.5px solid black;
 }
+
+.projectImage {
+  opacity: 0.75;
+  border-radius: 1px;
+}
+.projectImage:hover {
+  opacity: 1;
+}
+
+.projectDetails {
+  background-image: url(./images/dndluxe.png);
+}

@@ -1,8 +1,19 @@
-import React from 'react'
+import card from '../../images/card.png'
+import { styles } from '../../styles'
 
-function ProjectDetails() {
+function ProjectDetails({ project, flipCard }) {
     return (
-        <div>details</div>
+        <>
+            {/* blank image to keep the details side the same size as the image side */}
+            <img
+                src={card}
+                style={styles.projectDetails}
+                onClick={flipCard}>
+            </img>
+            <div style={{ position: "absolute" }}>
+                details
+            </div>
+        </>
     )
 }
 

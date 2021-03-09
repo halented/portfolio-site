@@ -9,14 +9,21 @@ import { styles } from '../styles'
 
 function ProjectCard({ project }) {
     const [showImage, setShowImage] = useState(true)
+
+    const flipCard = () => {
+        setShowImage(prev => !prev)
+    }
     return (
-        <div style={styles.projectCard}>
-            <div onClick={() => setShowImage(prev => !prev)} >
+        <div>
+            <div style={styles.imageAndDetailsBox}>
                 {showImage ?
-                    <ProjectImage />
+                    <ProjectImage project={project} flipCard={flipCard} />
                     :
-                    <ProjectDetails />
+                    <ProjectDetails project={project} flipCard={flipCard} />
                 }
+            </div>
+            <div style={styles.projectName}>
+                {project}
             </div>
         </div>
     )

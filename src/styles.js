@@ -1,17 +1,20 @@
-const textAlign = 'center'
+const centeredText = { textAlign: 'center' }
+
+const verticalBox = {
+    display: 'flex',
+    alignItems: 'center',
+    flexDirection: 'column'
+}
+
 export const styles = {
     menuBox: {
         padding: '5%',
         paddingTop: '2.5%',
         paddingBottom: '0%',
-        display: 'flex',
-        justifyContent: 'center',
-        flexDirection: 'column'
+        ...verticalBox
     },
     dropdown: {
-        display: 'flex',
-        alignItems: 'center',
-        flexDirection: 'column',
+        ...verticalBox,
         border: 'none'
     },
     menuItem: {
@@ -22,7 +25,7 @@ export const styles = {
     headers: {
         marginTop: '0%',
         backgroundColor: '#9ac6c8ff',
-        textAlign,
+        ...centeredText,
         fontSize: 20
     },
     pageName: {
@@ -30,11 +33,11 @@ export const styles = {
         fontFamily: "'Comfortaa', cursive"
     },
     profileHeader: {
-        textAlign,
+        ...centeredText,
         fontFamily: "'Comfortaa', cursive"
     },
     infoBody: {
-        textAlign,
+        ...centeredText,
         fontFamily: "'Courier New', monospace"
     },
     buttonBox: {
@@ -43,8 +46,7 @@ export const styles = {
         marginTop: '10%'
     },
     contactBox: {
-        display: 'flex',
-        flexDirection: 'column'
+        ...verticalBox
     },
     contactPoint: {
         display: 'flex',
@@ -65,13 +67,23 @@ export const styles = {
         justifyContent: 'flex-start'
     },
     projectBox: {
-        display: 'flex',
-        alignItems: 'center',
-        flexDirection: 'column',
-        width: '100%',
-        overflow: 'scroll'
+        ...verticalBox,
+        width: '100%'
     },
-    projectCard: {
-
+    imageAndDetailsBox: {
+        ...verticalBox,
+        marginTop: '3%'
+    },
+    projectName: {
+        ...verticalBox,
+        fontSize: 25
+    },
+    projectImage: {
+        width: '50%',
+        // height: '46vh'
+    },
+    projectDetails: {
+        ...verticalBox,
+        width: '51%'
     }
 }

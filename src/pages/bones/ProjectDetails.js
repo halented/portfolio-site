@@ -8,7 +8,8 @@ function ProjectDetails({ project, flipCard }) {
             <img
                 src={card}
                 style={styles.projectDetails}
-                onClick={flipCard}>
+                onClick={flipCard}
+                alt='blank space for background purposes'>
             </img>
             <div style={{ position: "absolute" }}>
                 details

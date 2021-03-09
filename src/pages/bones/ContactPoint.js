@@ -52,6 +52,7 @@ function ContactPoint({ point }) {
             {iconsMap[[point]]}
             <div style={styles.contactDetail}>
                 {detailsMap[[point]]}
+                {/* eslint-disable-next-line  */}
                 {point === "email" ? <ReactTooltip
                     id="email"
                     place={"top"}

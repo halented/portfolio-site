@@ -1,9 +1,9 @@
 {
-  "short_name": "Portfolio Site",
-  "name": "halented.com",
+  "short_name": "HALENTED",
+  "name": "Portfolio site for Hal Dunn",
   "icons": [
     {
-      "src": "icon.png",
+      "src": "aytch.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }

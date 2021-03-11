@@ -10,10 +10,13 @@
   border: none;
 }
 
-a {
+a,
+.linkMock {
   color: rgb(108, 152, 155);
 }
-a:hover {
+a:hover,
+.linkMock:hover {
+  cursor: pointer;
   font-weight: 700;
   color: rgb(108, 152, 155);
 }

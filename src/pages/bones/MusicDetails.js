@@ -3,14 +3,16 @@ import ReactTooltip from 'react-tooltip'
 
 const data = 'The Japanese House,<br />Frank Ocean,<br />Coheed & Camrbia,<br />Feist...<br />to name a few.'
 
+
 function MusicDetails() {
     return (
-        <>
-            <a
+        <span>
+            <span
                 data-for='main'
-                data-tip={data}>
+                data-tip={data}
+                className='linkMock'>
                 music
-            </a>
+            </span>
             <ReactTooltip
                 id="main"
                 place={"top"}
@@ -18,7 +20,7 @@ function MusicDetails() {
                 effect={"solid"}
                 multiline={true}
             />
-        </>
+        </span>
     )
 }
 

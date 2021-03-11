@@ -6,7 +6,6 @@ const data = 'The Japanese House,<br />Frank Ocean,<br />Coheed & Camrbia,<br />
 function MusicDetails() {
     return (
         <>
-            {/* eslint-disable-next-line  */}
             <a
                 data-for='main'
                 data-tip={data}>

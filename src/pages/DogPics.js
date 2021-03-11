@@ -20,20 +20,20 @@ const dogPics = [
 
 
 function DogPics() {
+
     const instaOpen = (path) => {
         window.open(`https://www.instagram.com/p/${path}`, '_blank')
     }
+
     return (
         <>
             <HeaderCustom pageName='dog pics' />
-            <Card>
-                {dogPics.map(pic => <DogDetail dog={pic} instaOpen={instaOpen} />)}
+            <Card data-testid='dog-card'>
+                {dogPics.map(pic => <DogDetail dog={pic} instaOpen={instaOpen} key={pic.path} />)}
             </Card>
         </>
     )
 }
-
-// 9 https://www.instagram.com/p/CDsBIJ9JCQl/
 
 
 export default DogPics

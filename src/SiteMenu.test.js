@@ -1,13 +1,17 @@
+// Integrations Test for Menu
+
 // testing elements
 import {
     render,
     fireEvent,
     screen
 } from '@testing-library/react'
-import user from '@testing-library/user-event'
 
 // component
 import App from './App'
+
+// cleanup is automatically called after each `test` or `it` by default when using Jest. if you import it from the testing library you *can* call it manually like so:
+// afterEach(cleanup)
 
 describe("Site Navigation Tests", () => {
 
@@ -53,3 +57,9 @@ describe("Site Navigation Tests", () => {
         // expect(await screen.findByText(/portfolio/i)).toBeInTheDocument()
     })
 })
+
+// IMPORTANT NOTE: inside node_modules/react-tooltip/dist/index.js line 1189, there is an error handler that inserts a style node into the DOM tree IF the style node does not already exist. This insertion causes any tests that come across the ToolTip component to fail with the following error: 
+
+// Error: Uncaught [HierarchyRequestError: Invalid insertion of STYLE node in #document node.]
+
+// commenting out this error handler temporarily resolves the problem and allows the tests to run. pending a better fix. 

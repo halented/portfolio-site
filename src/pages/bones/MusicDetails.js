@@ -12,13 +12,11 @@ function MusicDetails() {
                 className='linkMock'>
                 music
             </span>
-            <ReactTooltip
-                id="main"
-                place={"top"}
-                type={"dark"}
-                effect={"solid"}
+            {/* <ReactTooltip
+                id='main'
+                effect={'solid'}
                 multiline={true}
-            />
+            ></ReactTooltip> */}
         </span>
     )
 }

@@ -52,14 +52,14 @@ function ContactPoint({ point }) {
             {iconsMap[[point]]}
             <div style={styles.contactDetail}>
                 {detailsMap[[point]]}
-                {/* {point === 'email' ?
+                {point === 'email' ?
                     <ReactTooltip
                         id='email'
                         effect={'solid'}
                     />
                     :
                     null
-                } */}
+                }
             </div>
         </div>
     )

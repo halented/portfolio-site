@@ -14,7 +14,7 @@ const SiteMenu = () => {
   const allMenuOptions = () => {
     return (
       <>
-        <CloseCircleOutlined style={{ fontSize: '25px', color: 'rgb(70,70,70)' }} onClick={toggleMenu} />
+        <CloseCircleOutlined style={{ fontSize: '25px', color: 'rgb(70,70,70)' }} onClick={toggleMenu} aria-label='close menu button' />
         <Menu
           style={styles.dropdown}
           onClick={toggleMenu}
@@ -52,7 +52,7 @@ const SiteMenu = () => {
   return (
     <div style={styles.menuBox}>
       <div style={{ display: 'inline-grid' }}>
-        {menuOpen ? allMenuOptions() : <DownCircleOutlined style={{ fontSize: '25px', color: 'rgb(70,70,70)' }} onClick={toggleMenu} data-testid='open-menu' />}
+        {menuOpen ? allMenuOptions() : <DownCircleOutlined style={{ fontSize: '25px', color: 'rgb(70,70,70)' }} onClick={toggleMenu} data-testid='open-menu' aria-label='open menu button' />}
       </div>
       <Divider style={{ marginTop: '1%' }} />
     </div>

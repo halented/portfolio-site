@@ -28,6 +28,25 @@ describe("Site Navigation Tests", () => {
         expect(await screen.findByText(/Resume/i)).toBeInTheDocument()
     })
 
+    test('Buttons on profile change page appropriately', async () => {
+        render(<App />)
+        // test the project button
+        const projectButton = screen.getByText('PROJECTS')
+        fireEvent.click(projectButton)
+
+        expect(await screen.findByText(/DnDLuxe/i)).toBeInTheDocument()
+
+        // navigate back to About section
+        openMenu()
+        const aboutButton = await screen.findByText('About')
+        fireEvent.click(aboutButton)
+
+        // test the contact button
+        const contactButton = screen.getByText('CONTACT')
+        fireEvent.click(contactButton)
+        expect(await screen.findByText(/Twitter/i)).toBeInTheDocument()
+    })
+
     test('Links in menu change page appropriately', async () => {
         render(<App />)
 

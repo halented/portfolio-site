@@ -3,19 +3,17 @@ import { styles } from '../../styles'
 import { Link } from 'react-router-dom'
 import h from '../../images/aytch-mt.png'
 
-const btnStyle = { backgroundColor: '#9ac6c8ff', fontWeight: 'bold', marginTop: '10%' }
-
 function Buttons() {
     return (
         <div style={styles.buttonBox}>
             <Link to='/projects'>
-                <Button style={btnStyle}>
+                <Button style={styles.btnStyle}>
                     PROJECTS
                 </Button>
             </Link>
-            <img src={h} alt='logo of an H' />
+            <img src={h} alt='logo of an H' style={styles.logo} />
             <Link to='contact'>
-                <Button style={btnStyle}>
+                <Button style={styles.btnStyle}>
                     CONTACT
                 </Button>
             </Link>

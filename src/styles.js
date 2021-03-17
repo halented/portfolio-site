@@ -45,6 +45,14 @@ export const styles = {
         justifyContent: 'space-evenly',
         marginTop: '5%'
     },
+    btnStyle: {
+        backgroundColor: '#9ac6c8ff',
+        fontWeight: 'bold',
+        marginTop: '10%'
+    },
+    logo: {
+        width: '20%'
+    },
     contactBox: {
         ...verticalBox
     },

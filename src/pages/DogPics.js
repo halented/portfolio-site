@@ -6,6 +6,10 @@ import { dog1, dog2, dog3, dog4, dog5, dog6, dog7, dog8, dog9 } from '../images/
 // style
 import { Card } from 'antd'
 
+// other libs
+import { useEffect } from 'react'
+import gsap from 'gsap'
+
 const dogPics = [
     { path: 'Bn2FgpOB0xL/', image: dog1 },
     { path: 'BbXUoRmAb6S/', image: dog2 },
@@ -20,6 +24,10 @@ const dogPics = [
 
 
 function DogPics() {
+    useEffect(() => {
+        // animate contact points
+        gsap.from('.dogPic', { duration: 1, y: -200, opacity: 0, stagger: .19 })
+    }, [])
 
     const instaOpen = (path) => {
         window.open(`https://www.instagram.com/p/${path}`, '_blank')

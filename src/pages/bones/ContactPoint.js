@@ -48,7 +48,7 @@ const detailsMap = {
 
 function ContactPoint({ point }) {
     return (
-        <div style={styles.contactPoint}>
+        <div style={styles.contactPoint} className='point'>
             {iconsMap[[point]]}
             <div style={styles.contactDetail}>
                 {detailsMap[[point]]}

@@ -6,9 +6,17 @@ import ProjectCard from './ProjectCard'
 import { Card } from 'antd'
 import { styles } from '../styles'
 
+// other
+import { useEffect } from 'react'
+import gsap from 'gsap'
+
 const projects = ["Finally", "DnDLuxe", "Twitflip"]
 
 function Projects() {
+    useEffect(() => {
+        // animate project cards
+        gsap.from('.projects', { duration: 1, y: -100, opacity: 0, stagger: .19 })
+    }, [])
     return (
         <>
             <HeaderCustom pageName='projects' />

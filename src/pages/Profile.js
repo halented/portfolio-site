@@ -8,6 +8,7 @@ import { Card } from 'antd'
 import { styles } from '../styles'
 
 
+
 function Profile() {
     return (
         <>
@@ -28,5 +29,4 @@ function Profile() {
     )
 }
 
-// replace music with this: <MusicDetails />
 export default Profile

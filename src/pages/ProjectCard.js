@@ -14,7 +14,7 @@ function ProjectCard({ project }) {
         setShowImage(prev => !prev)
     }
     return (
-        <div>
+        <div className='projects'>
             <div style={styles.imageAndDetailsBox}>
                 {showImage ?
                     <ProjectImage project={project} flipCard={flipCard} />

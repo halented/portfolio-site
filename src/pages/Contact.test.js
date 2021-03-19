@@ -10,11 +10,11 @@ describe('Contact details tests', () => {
         const twitterlink = screen.getByText('Twitter')
         fireEvent.click(twitterlink)
         // now what
-        // expect(jest.fn()).toBeCalled()
+        // expect(window.open).toBeCalled()
     })
 })
 
-// produces error: 
+// expect(window.open).toBeCalled()produces error: 
 // expect(received).toBeCalled()
 // Matcher error: received value must be a mock or spy function
 

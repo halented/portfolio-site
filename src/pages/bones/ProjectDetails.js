@@ -5,7 +5,6 @@ import { DetailBlurbs } from './DetailBlurbs.js'
 function ProjectDetails({ project, flipCard }) {
     return (
         <>
-            {/* blank image to keep the details side the same size as the image side */}
             <img
                 src={card}
                 style={styles.projectDetails}

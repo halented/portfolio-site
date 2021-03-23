@@ -100,7 +100,7 @@ export const styles = {
         padding: '5%',
         overflow: 'scroll',
         maxWidth: '80%',
-        maxHeight: '25%'
+        maxHeight: '80%'
     },
     dogPic: {
         width: '50%',

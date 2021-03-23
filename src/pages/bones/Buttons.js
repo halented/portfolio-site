@@ -7,19 +7,19 @@ import h from '../../images/aytch-mt.png'
 
 function Buttons() {
     useEffect(() => {
-        // logo drops down
-        gsap.from('.logo', { duration: 2, y: -200, opacity: 0 })
+        // logo does stuff
+        gsap.to('.logo', { duration: 2, maxWidth: '10%', opacity: 1, bottom: 0 })
     }, [])
     return (
         <div style={styles.buttonBox}>
-            <Link to='/projects' >
+            <Link to='/projects' style={styles.equalWidth}>
                 <Button style={styles.btnStyle}>
                     PROJECTS
                 </Button>
             </Link>
-            <img src={h} alt='logo of an H' style={styles.logo} className='logo' />
-            <Link to='contact'>
-                <Button style={styles.btnStyle}>
+            <img src={h} alt='logo of an H' className='logo' style={styles.logo} />
+            <Link to='contact' style={styles.equalWidth}>
+                <Button style={styles.btnStyle} >
                     CONTACT
                 </Button>
             </Link>

@@ -8,6 +8,7 @@
 
 .ant-card-bordered {
   border: none;
+  background-color: transparent;
 }
 
 a,
@@ -22,6 +23,7 @@ a:hover,
 }
 .ant-btn {
   border: 0.5px solid white;
+  padding: 4px 4px;
 }
 
 .ant-btn:hover {

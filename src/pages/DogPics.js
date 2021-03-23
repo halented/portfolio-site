@@ -25,7 +25,6 @@ const dogPics = [
 
 function DogPics() {
     useEffect(() => {
-        // animate contact points
         gsap.from('.dogPic', { duration: 1, y: -200, opacity: 0, stagger: .19 })
     }, [])
 
